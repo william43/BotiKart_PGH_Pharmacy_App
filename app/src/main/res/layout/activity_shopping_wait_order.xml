@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/waitOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadows"
+        android:layout_margin="60dp"
+        android:elevation="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order is being processes, please wait for us to contact you after a few hours"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_above="@+id/wait_phone_number"
+            android:layout_marginBottom="40dp"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We'll contact you thru"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_above="@+id/wait_phone_number"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:id="@+id/wait_phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="090909"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order Activity"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

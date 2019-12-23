@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="2">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher_round"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/prescribed_addreceipt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/camera"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/prescribed_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/prescribed_addreceipt"
+                android:text="Take a picture of your receipt"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/prescribed_medicine_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="LOREM"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:text="Quantity"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/prescribed_quantity_horizontal_number_picker"
+                android:gravity="center"/>
+
+            <com.example.pgh_pharmacy_app.HorizontalNumberPicker
+                android:id="@+id/prescribed_quantity_horizontal_number_picker"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true">
+
+
+            </com.example.pgh_pharmacy_app.HorizontalNumberPicker>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/prescribed_addtoCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Add to Card"/>
+        <Button
+            android:id="@+id/prescribed_proceedtoCart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Proceed to Cart"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/prescribed_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal">
+
+        
+    </ProgressBar>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/sign_up_screen">
+
+
+
+    <RelativeLayout
+        android:id="@+id/placeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shadows"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="200dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:elevation="20dp">
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Order is being processes, please wait to be notified"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+<!--
+        <TextView
+            android:id="@+id/counter_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter A"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_above="@+id/queueing_number"
+            android:textSize="40dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Queueing Number or Code is"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_above="@+id/queueing_number"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:id="@+id/queueing_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="80008"
+            android:layout_centerInParent="true"
+            android:textAlignment="center"
+            android:textSize="40dp"
+            android:textColor="#FFF"/>
+           -->
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We'll contact you thru"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_below="@+id/text"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="090909"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="#FFF"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

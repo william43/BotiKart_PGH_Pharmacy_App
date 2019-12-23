@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Code Activity"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/usernumberTV"
+        android:layout_centerHorizontal="true"
+        android:text="A Verification has been sent to"/>
+
+    <TextView
+        android:id="@+id/usernumberTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verifycodeET"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text="09178910616">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/verifycodeET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_centerInParent="true">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/verifyBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verifycodeET"
+        android:layout_centerHorizontal="true"
+        android:text="Verify code">
+
+    </Button>
+
+</RelativeLayout>

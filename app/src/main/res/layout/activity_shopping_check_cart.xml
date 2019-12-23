@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/main_screen_with_header">
+
+
+    <ImageView
+        android:id="@+id/shopping_cart_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ef_ic_arrow_back"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="SHOPPING CART"
+    android:textSize="20dp"
+    android:layout_marginTop="10dp"
+    android:textColor="@color/ef_white"
+    android:textAlignment="center"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="100dp"
+        android:id="@+id/shoppingcartRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/voucherDetails"
+        android:layout_alignParentTop="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/voucherDetails"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fca311"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/voucherTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Voucher"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/searchVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/voucherNext"
+                android:layout_toRightOf="@id/voucherTV"/>
+            <ImageView
+                android:id="@+id/voucherNext"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_point_to_right"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/creditsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Credit Units:"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/totalUserCredits"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/userCredits"
+                android:layout_toRightOf="@id/creditsTV"
+                android:text="0 Credits"
+                android:textSize="20dp" />
+
+            <ToggleButton
+                android:id="@+id/userCredits"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <CheckBox
+                android:id="@+id/checkAll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Check All"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/TotalPriceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Total: Php 0"
+                android:textAlignment="center"
+                android:layout_toRightOf="@id/checkAll"
+                android:layout_toLeftOf="@id/placeOrderBTN"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/placeOrderBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Check out"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shopping Cart Activity"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

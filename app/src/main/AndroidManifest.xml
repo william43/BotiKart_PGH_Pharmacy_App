@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pgh_pharmacy_app">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Login.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.Login.LoginSplashActivity"/>
+        <activity android:name=".activity.Login.CodeActivity"></activity>
+        <activity android:name=".activity.MainActivity"></activity>
+        <activity android:name=".activity.Login.LoginSplashTutorialActivity"></activity>
+        <activity android:name=".activity.ShoppingCart.CheckoutActivity"></activity>
+        <activity android:name=".activity.ShoppingCart.CheckShoppingCartActivity"></activity>
+        <activity android:name=".activity.ShoppingCart.PlaceOrderActivity"></activity>
+        <activity android:name=".activity.ShoppingCart.WaitOrderActivity"></activity>
+        <activity android:name=".activity.Purchases.PurchasesActivity" />
+        <activity android:name=".activity.AdminActivity"/>
+        <activity android:name=".activity.Admin.AdminCheckPurchase"/>
+        <activity android:name=".activity.Admin.ProceedPurchaseAdminActivity"/>
+        <activity android:name=".activity.Admin.PendingPurchaseAdminActivity"/>
+        <activity android:name=".activity.Admin.AdminCheckPrescribedReceiptActivity"/>
+        <activity android:name=".activity.Login.SignUpActivity"/>
+        <activity android:name=".activity.VoucherActivity"/>
+        <service
+            android:name=".FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <receiver
+            android:name=".MySmsReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

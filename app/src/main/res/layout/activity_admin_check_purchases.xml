@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/admin_check_purchases_RV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttons"/>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="2">
+        <Button
+            android:id="@+id/admin_pending"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Pending"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/admin_proceed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Proceed"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/down_arrow"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/admin_receipt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:drawablePadding="5dp"
+        android:gravity="left|center"
+        android:padding="8dp"
+        android:textColor="#e6e600" />
+
+    <TextView
+        android:id="@+id/admin_isprocessed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="5dp"
+        android:padding="8dp"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:text="free"
+        android:textColor="@color/notinprocess" />
+
+</RelativeLayout>

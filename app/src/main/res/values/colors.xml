@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="searchBackground">#a0a49d</color>
+    <color name="inprocess">#f00</color>
+    <color name="notinprocess">#5cff00</color>
+</resources>

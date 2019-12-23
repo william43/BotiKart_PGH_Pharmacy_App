@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/main_screen_with_header">
+
+
+
+    <ImageView
+        android:id="@+id/shopping_checkout_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ef_ic_arrow_back"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CHECKOUT"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/ef_white"
+        android:textAlignment="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="100dp"
+        android:id="@+id/finalShoppingCartRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/voucherDetails"
+        android:layout_alignParentTop="true"/>
+
+
+    <LinearLayout
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:id="@+id/voucherDetails"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp"
+        android:background="#fca311"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/AddressTV"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Address"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/userAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="#1 Bluebell Loop, Lexington Garden Village, San Joaquin, Pasig City "
+                android:layout_toLeftOf="@+id/searchAddress"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_toRightOf="@id/AddressTV"/>
+            <ImageView
+                android:id="@+id/searchAddress"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/arrow_point_to_right"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/finalTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Total: Php 0"
+                android:textAlignment="center"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/finalBTN"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/finalBTN"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Check out"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checkout Activity"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
